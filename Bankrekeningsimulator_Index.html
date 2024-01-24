@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bankrekening Simulator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <h1>Bankrekening Simulator</h1>
+
+    <div>
+        <label for="username">Gebruikersnaam:</label>
+        <input type="text" id="username" placeholder="Voer gebruikersnaam in">
+        <button onclick="switchUser()">Wissel gebruiker</button>
+    </div>
+
+    <div id="balance">Saldo: $1000</div>
+
+    <label for="amount">Bedrag:</label>
+    <input type="number" id="amount" placeholder="Voer bedrag in">
+
+    <button onclick="checkBalance()">Saldo controleren</button>
+    <button onclick="deposit()">Storten</button>
+    <button onclick="withdraw()">Opnemen</button>
+
+    <div id="transactionResult"></div>
+
+    <h2>Transactiegeschiedenis</h2>
+    <ul id="transactionHistory"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
